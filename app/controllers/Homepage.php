@@ -1,5 +1,4 @@
 <?php
-
 class Homepage extends BaseController
 {
     public function index()
@@ -7,7 +6,7 @@ class Homepage extends BaseController
         $data = [
             'title' => 'Homepage!'
         ];
-    
+
         $this->view('Homepage/index', $data);
     }
 }
