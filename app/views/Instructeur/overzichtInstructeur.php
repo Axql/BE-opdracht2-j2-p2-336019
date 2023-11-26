@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="stylesheet" href="<?= URLROOT; ?>/css/style.css">
     <title>Overzicht Instructeurs</title>
 </head>
@@ -17,11 +16,11 @@
 
     <div class="container mx-auto p-4">
         <u><?= $data['title']; ?></u><br>
-        <!-- button to take me home  -->
+
         <a href="<?= URLROOT; ?>" class="btn btn-primary">Home</a>
-        <!-- aantal instructeurs -->
+
         <p>Er zijn <?= $data['totalInstructeurs']; ?> instructeurs</p>
-        <!-- Your content goes here -->
+
         <table>
             <thead>
                 <th>Voornaam</th>
@@ -51,7 +50,7 @@
                             </a>
                         </td>
                         <td>
-                            <!-- check if instructeatr is actief -->
+
                             <?php if ($instructeur->IsActief == 1) { ?>
                                 <a href='<?= URLROOT ?>/instructeur/ziekverlof/<?= $instructeur->Id ?>'>
                                     <i class="bi bi-hand-thumbs-up"></i>
