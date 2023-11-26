@@ -14,9 +14,8 @@
 
 <body class="bg-gray-100 p-6">
 
-    <!-- make table voor  niet gebruikte voertuigen-->
-    <!-- <?php var_dump($data) ?> -->
-    <!-- table with 5 columns -->
+
+
     <h1 class="text-2xl font-bold mb-4">Vehicle Information</h1>
     <table>
         <tbody>
@@ -47,8 +46,8 @@
             </tr>
         </thead>
         <tbody>
-            <!-- check if $data['result'] contains 1 row -->
-            <?php 
+
+            <?php
             // var_dump($data);
             if (count($data['result']) == 0) : ?>
                 <tr>
@@ -62,13 +61,13 @@
                     <td class="py-2 px-4 border-b"><?= $voertuigInfo->Bouwjaar ?></td>
                     <td class="py-2 px-4 border-b"><?= $voertuigInfo->Brandstof ?></td>
                     <td class="py-2 px-4 border-b">
-                        <!-- icon and a tag to add it -->
+
                         <a href="<?= URLROOT; ?>/instructeur/addNietGebruiktVoertuigen/<?= $voertuigInfo->Id ?>/<?= $data['instructeaurId'] ?>" class='m-4'>
                             <i class='bi bi-plus'></i>
                         </a>
                     </td>
                     <td class="py-2 px-4 border-b">
-                        <!-- icon and a tag to add it -->
+
                         <a href="<?= URLROOT; ?>/instructeur/overzichtvoertuigen_wijzig/<?= $voertuigInfo->Id ?>/<?= $data['instructeaurId'] ?>" class='m-4'>
                             <i class='bi bi-pencil-square'></i>
                         </a>
