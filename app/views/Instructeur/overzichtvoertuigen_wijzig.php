@@ -13,8 +13,8 @@
 </head>
 
 <body class="bg-gray-100 p-6">
-    <!-- <?php var_dump($data) ?> -->
-    
+
+
     <div class="max-w-md mx-auto bg-white rounded p-6">
         <h2 class="text-xl mb-4">Update Voertuig info</h2>
         <form action="<?= URLROOT; ?>/instructeur/overzichtvoertuigen_wijzig_save/<?= $data['voertuigId'] ?>/<?= $data['instructeaurId'] ?>" method="POST">
@@ -41,7 +41,7 @@
                 <label for="kenteken" class="block text-gray-700 font-bold mb-2">Kenteken:</label>
                 <input type="text" id="kenteken" name="kenteken" class="w-full p-2 border border-gray-300 rounded" value="<?= $data['voertuigInfo'][0]->Kenteken ?>">
             </div>
-            <!-- make a date field that can not change -->
+
             <div class="mb-4">
                 <label for="bouwjaar" class="block text-gray-700 font-bold mb-2">Bouwjaar:</label>
                 <input type="date" id="bouwjaar" name="bouwjaar" class="w-full p-2 border border-gray-300 rounded" value="<?= $data['voertuigInfo'][0]->Bouwjaar ?>" disabled>
@@ -62,7 +62,7 @@
 
         </form>
     </div>
-    <!-- form with 3 text input, save and cancel button  and tailwind css-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
