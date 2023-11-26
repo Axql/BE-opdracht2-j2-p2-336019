@@ -1,11 +1,11 @@
 
-DROP DATABASE IF EXISTS `be-opdracht1-j2-p1`;
+DROP DATABASE IF EXISTS `be-opdracht2`;
 
 -- Create a new Database
-CREATE DATABASE IF NOT EXISTS `be-opdracht1-j2-p1`;
+CREATE DATABASE IF NOT EXISTS `be-opdracht2`;
 
--- Use database be-opdracht1-j2-p1
-Use `be-opdracht1-j2-p1`;
+
+Use `be-opdracht2`;
 
 
 DROP TABLE IF EXISTS Instructeur;
